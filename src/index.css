@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root .game {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #EEE;
+  border-radius: 10px;
+}
+#root .game .info {
+  font-size: 24px;
+}
+#root .game .board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#root .game .board .cell {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: #FFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#root .game .board .cell.active {
+  cursor: auto;
+}
+#root .game .btn {
+  margin-top: 1rem;
+}/*# sourceMappingURL=index.css.map */
